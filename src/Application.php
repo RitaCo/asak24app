@@ -44,6 +44,8 @@ class Application extends BaseApplication
      */
     public function bootstrap(): void
     {
+        $this->addPlugin('AssetMix');
+
         // Call parent to load bootstrap from files.
         parent::bootstrap();
 
@@ -60,7 +62,10 @@ class Application extends BaseApplication
          * Only try to load DebugKit in development mode
          * Debug Kit should not be installed on a production system
          */
+
         if (Configure::read('debug')) {
+            Configure::write('DebugKit.forceEnable', true);
+            Configure::write('DebugKit.safeTld', [ 'asak24.loc']);
             $this->addPlugin('DebugKit');
         }
 
