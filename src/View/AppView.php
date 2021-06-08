@@ -37,6 +37,6 @@ class AppView extends View
      */
     public function initialize(): void
     {
-        $this->loadHelper('AssetMix.AssetMix');
+        //$this->loadHelper('AssetMix.AssetMix');
     }
 }
