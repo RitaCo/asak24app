@@ -8,7 +8,7 @@
     <?php
     //$this->AssetMix->css('app');
     // $this->AssetMix->script('app')
-    echo $this->Html->css(['tailwind.min.css', 'full.css', 'app']);
+    echo $this->Html->css(['tailwind.min.css', 'full.css', 'app','fontiran']);
     ?>
 
 
@@ -19,20 +19,21 @@
 </head>
 <body class=" bg-gray-100">
 
+<div  class="flex h-screen bg-gray-200 font-roboto">
+    <?= $this->element('Admin/sidebar-left1'); ?>
 
-<nav id="main-nav" class="w-52 z-50 bg-white shadow md:right-0 md:block md:fixed md:top-0 md:bottom-0 md:flex-row md:flex-nowrap">
-    <?= $this->element('Admin/sidebar-left'); ?>
-</nav>
-<main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
-    <div class="container mx-auto px-6 py-8">
-        <?= $this->fetch('content'); ?>
+    <div class="flex-1 flex flex-col overflow-hidden">
+        <?= $this->element('Admin/header'); ?>
+
+        <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
+            <div class="container mx-auto px-6 py-8">
+                <?= $this->fetch('content'); ?>
+            </div>
+        </main>
     </div>
-</main>
-<div class="  md:mr-52 z-0 p-2 	">
-
-
-    ss
 </div>
+
+
 
 
 <?= $this->fetch('script') ?>

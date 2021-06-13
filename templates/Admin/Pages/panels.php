@@ -1,328 +1,77 @@
-<div class="px-4 md:px-10 mx-auto w-full bg-gray-500 ">
-<p>asdasd</p>
-    <div class="flex flex-wrap">
-        <div class="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
-            <div
-                class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded bg-blueGray-800"
-            >
-                <div class="rounded-t mb-0 px-4 py-3 bg-transparent">
-                    <div class="flex flex-wrap items-center">
-                        <div class="relative w-full max-w-full flex-grow flex-1">
-                            <h6
-                                class="uppercase text-blueGray-100 mb-1 text-xs font-semibold"
-                            >
-                                Overview
-                            </h6>
-                            <h2 class="text-white text-xl font-semibold">
-                                Sales value
-                            </h2>
+  <h3 class="text-gray-700 text-3xl font-semibold">Forms</h3>
+
+    <div class="mt-4">
+        <h4 class="text-gray-600">Model Form</h4>
+
+        <div class="mt-4">
+            <div class="max-w-sm w-full bg-white shadow-md rounded-md overflow-hidden border-base-900">
+                <form>
+                    <div class="flex justify-between items-center px-5 py-3 text-gray-700 border-b">
+                        <h3 class="text-sm">Add Category</h3>
+                        <button>
+                            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="px-5 py-6 bg-gray-200 text-gray-700 border-b">
+                        <label class="text-xs">Name</label>
+
+                        <div class="mt-2 relative rounded-md shadow-sm">
+                            <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-600">
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/>
+                                </svg>
+                            </span>
+
+                            <input type="text" class="form-input w-full px-12 py-2 appearance-none rounded-md focus:border-indigo-600">
                         </div>
                     </div>
-                </div>
-                <div class="p-4 flex-auto">
-                    <!-- Chart -->
-                    <div class="relative" style="height:350px">
-                        <canvas id="line-chart"></canvas>
+
+                    <div class="flex justify-between items-center px-5 py-3">
+                        <button class="px-3 py-1 text-gray-700 text-sm rounded-md bg-gray-200 hover:bg-gray-300 focus:outline-none">Cancel</button>
+                        <button class="px-3 py-1 bg-indigo-600 text-white rounded-md text-sm hover:bg-indigo-500 focus:outline-none">Save</button>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="w-full xl:w-4/12 px-4">
-            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded"
-            >
-                <div class="rounded-t mb-0 px-4 py-3 bg-transparent">
-                    <div class="flex flex-wrap items-center">
-                        <div class="relative w-full max-w-full flex-grow flex-1">
-                            <h6
-                                class="uppercase text-blueGray-400 mb-1 text-xs font-semibold"
-                            >
-                                Performance
-                            </h6>
-                            <h2 class="text-blueGray-700 text-xl font-semibold">
-                                Total orders
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-4 flex-auto">
-                    <!-- Chart -->
-                    <div class="relative" style="height:350px">
-                        <canvas id="bar-chart"></canvas>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
-    <div class="flex flex-wrap mt-4">
-        <div class="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
-            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
-                <div class="rounded-t mb-0 px-4 py-3 border-0">
-                    <div class="flex flex-wrap items-center">
-                        <div class="relative w-full px-4 max-w-full flex-grow flex-1">
-                            <h3 class="font-semibold text-base text-blueGray-700">
-                                Page visits
-                            </h3>
-                        </div>
-                        <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
-                            <button
-                                class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1"
-                                type="button"
-                                style="transition:all .15s ease"
-                            >
-                                See all
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="block w-full overflow-x-auto">
-                    <!-- Projects table -->
-                    <table class="items-center w-full bg-transparent border-collapse">
-                        <thead>
-                        <tr>
-                            <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                Page name
-                            </th>
-                            <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                Visitors
-                            </th>
-                            <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                Unique users
-                            </th>
-                            <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                Bounce rate
-                            </th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
-                                /argon/
-                            </th>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                4,569
-                            </td>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                340
-                            </td>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                <i class="fas fa-arrow-up text-emerald-500 mr-4"></i>
-                                46,53%
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
-                                /argon/index.html
-                            </th>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                3,985
-                            </td>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                319
-                            </td>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-                                46,53%
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
-                                /argon/charts.html
-                            </th>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                3,513
-                            </td>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                294
-                            </td>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-                                36,49%
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
-                                /argon/tables.html
-                            </th>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                2,050
-                            </td>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                147
-                            </td>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                <i class="fas fa-arrow-up text-emerald-500 mr-4"></i>
-                                50,87%
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
-                                /argon/profile.html
-                            </th>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                1,795
-                            </td>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                190
-                            </td>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                <i class="fas fa-arrow-down text-red-500 mr-4"></i>
-                                46,53%
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <div class="w-full xl:w-4/12 px-4">
-            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
-                <div class="rounded-t mb-0 px-4 py-3 border-0">
-                    <div class="flex flex-wrap items-center">
-                        <div class="relative w-full px-4 max-w-full flex-grow flex-1">
-                            <h3 class="font-semibold text-base text-blueGray-700">
-                                Social traffic
-                            </h3>
-                        </div>
-                        <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
-                            <button
-                                class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1"
-                                type="button"
-                                style="transition:all .15s ease"
-                            >
-                                See all
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="block w-full overflow-x-auto">
-                    <!-- Projects table -->
-                    <table class="items-center w-full bg-transparent border-collapse">
-                        <thead class="thead-light">
-                        <tr>
-                            <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                Referral
-                            </th>
-                            <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                Visitors
-                            </th>
-                            <th
-                                class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
-                                style="min-width:140px"
-                            ></th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
-                                Facebook
-                            </th>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                1,480
-                            </td>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                <div class="flex items-center">
-                                    <span class="mr-2">60%</span>
-                                    <div class="relative w-full">
-                                        <div class="overflow-hidden h-2 text-xs flex rounded bg-red-200">
-                                            <div
-                                                style="width:60%"
-                                                class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"
-                                            ></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
-                                Facebook
-                            </th>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                5,480
-                            </td>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                <div class="flex items-center">
-                                    <span class="mr-2">70%</span>
-                                    <div class="relative w-full">
-                                        <div class="overflow-hidden h-2 text-xs flex rounded bg-emerald-200">
-                                            <div
-                                                style="width:70%"
-                                                class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-emerald-500"
-                                            ></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
-                                Google
-                            </th>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                4,807
-                            </td>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                <div class="flex items-center">
-                                    <span class="mr-2">80%</span>
-                                    <div class="relative w-full">
-                                        <div class="overflow-hidden h-2 text-xs flex rounded bg-purple-200">
-                                            <div
-                                                style="width:80%"
-                                                class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-500"
-                                            ></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
-                                Instagram
-                            </th>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                3,678
-                            </td>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                <div class="flex items-center">
-                                    <span class="mr-2">75%</span>
-                                    <div class="relative w-full">
-                                        <div class="overflow-hidden h-2 text-xs flex rounded bg-lightBlue-200">
-                                            <div
-                                                style="width:75%"
-                                                class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-lightBlue-500"
-                                            ></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
-                                twitter
-                            </th>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                2,645
-                            </td>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                <div class="flex items-center">
-                                    <span class="mr-2">30%</span>
-                                    <div class="relative w-full">
-                                        <div class="overflow-hidden h-2 text-xs flex rounded bg-orange-200">
-                                            <div
-                                                style="width:30%"
-                                                class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-emerald-500"
-                                            ></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
 
+    <div class="mt-20">
+        <h4 class="text-gray-600">Forms</h4>
+
+        <div class="mt-4">
+            <div class="p-6 bg-white rounded-md shadow-md">
+                <h2 class="text-lg text-gray-700 font-semibold capitalize">Account settings</h2>
+
+                <form>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
+                        <div>
+                            <label class="text-gray-700" for="username">Username</label>
+                            <input class="form-input w-full mt-2 rounded-md focus:border-indigo-600" type="text">
+                        </div>
+
+                        <div>
+                            <label class="text-gray-700" for="emailAddress">Email Address</label>
+                            <input class="form-input w-full mt-2 rounded-md focus:border-indigo-600" type="email">
+                        </div>
+
+                        <div>
+                            <label class="text-gray-700" for="password">Password</label>
+                            <input class="form-input w-full mt-2 rounded-md focus:border-indigo-600" type="password">
+                        </div>
+
+                        <div>
+                            <label class="text-gray-700" for="passwordConfirmation">Password Confirmation</label>
+                            <input class="form-input w-full mt-2 rounded-md focus:border-indigo-600" type="password">
+                        </div>
+                    </div>
+
+                    <div class="flex justify-end mt-4">
+                        <button class="px-4 py-2 bg-gray-800 text-gray-200 rounded-md hover:bg-gray-700 focus:outline-none focus:bg-gray-700">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-
-</div>
