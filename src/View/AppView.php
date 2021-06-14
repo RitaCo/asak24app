@@ -13,6 +13,7 @@ declare(strict_types=1);
  * @since     3.0.0
  * @license   https://opensource.org/licenses/mit-license.php MIT License
  */
+
 namespace App\View;
 
 use Cake\View\View;
@@ -38,7 +39,13 @@ class AppView extends View
     public function initialize(): void
     {
         $this->loadHelper('Form', [
-            'templates' => 'app_form',
+            'templates' => 'templates-form',
+        ]);
+        $this->loadHelper('Paginator', [
+            'templates' => 'templates-paginator'
+        ]);
+        $this->loadHelper('Html', [
+            'templates' => 'templates-html'
         ]);
         //$this->loadHelper('AssetMix.AssetMix');
     }

@@ -22,6 +22,7 @@
     <?= $this->fetch('script') ?>
 </head>
 <body class="flex items-center justify-center w-screen h-screen p-10 space-x-6 bg-gray-300">
+<?= $this->Flash->render() ?>
 <?= $this->fetch('content'); ?>
 
 <div id="app">

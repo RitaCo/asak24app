@@ -43,7 +43,8 @@ use Cake\Mailer\Mailer;
 use Cake\Mailer\TransportFactory;
 use Cake\Routing\Router;
 use Cake\Utility\Security;
-
+use Cake\I18n\I18n;
+use Cake\Database\TypeFactory;
 /*
  * See https://github.com/josegonzalez/php-dotenv for API details.
  *
@@ -212,3 +213,8 @@ ServerRequest::addDetector('tablet', function ($request) {
 //Inflector::rules('plural', ['/^(inflect)or$/i' => '\1ables']);
 //Inflector::rules('irregular', ['red' => 'redlings']);
 //Inflector::rules('uninflected', ['dontinflectme']);
+
+
+I18n::setLocale('fa_IR@calendar=persian');
+
+TypeFactory::build('datetime')->useLocaleParser();

@@ -49,7 +49,9 @@ class CategoriesTable extends Table
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
-        $this->addBehavior('Tree');
+        $this->addBehavior('Tree',[
+            'level' => 'level'
+        ]);
 
         $this->belongsTo('ParentCategories', [
             'className' => 'Categories',
@@ -63,6 +65,7 @@ class CategoriesTable extends Table
             'foreignKey' => 'category_id',
         ]);
     }
+
 
     /**
      * Default validation rules.
@@ -128,7 +131,7 @@ class CategoriesTable extends Table
      */
     public function buildRules(RulesChecker $rules): RulesChecker
     {
-        $rules->add($rules->existsIn(['parent_id'], 'ParentCategories'), ['errorField' => 'parent_id']);
+        //$rules->add($rules->existsIn(['parent_id'], 'ParentCategories'), ['errorField' => 'parent_id']);
 
         return $rules;
     }

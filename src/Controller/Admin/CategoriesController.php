@@ -54,6 +54,7 @@ class CategoriesController extends AdminAppController
         $category = $this->Categories->newEmptyEntity();
         if ($this->request->is('post')) {
             $category = $this->Categories->patchEntity($category, $this->request->getData());
+            if (empty($category->parent_id)) $category->parent_id = 0;
             if ($this->Categories->save($category)) {
                 $this->Flash->success(__('The category has been saved.'));
 

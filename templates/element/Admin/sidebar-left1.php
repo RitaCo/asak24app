@@ -1,4 +1,4 @@
-<nav id="main-nav" class="w-52 z-50 bg-white shadow  md:flex-row md:flex-nowrap">
+<nav id="main-nav" class="w-52 z-1 bg-white shadow  md:flex-row md:flex-nowrap">
 
 <!-- Component Start -->
 <div class=" flex flex-col items-center  h-full overflow-hidden text-gray-400 bg-gray-800 ">
@@ -16,7 +16,7 @@
                 </svg>
                 <span class="ml-2 text-sm font-medium">داشبرد</span>
             </a>
-            <a class="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-600 hover:text-gray-300" href="#">
+            <a class="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-600 hover:text-gray-300" href="/admin/categories">
                 <svg class="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>

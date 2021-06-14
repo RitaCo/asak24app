@@ -44,13 +44,12 @@ class Application extends BaseApplication
      */
     public function bootstrap(): void
     {
-        $this->addPlugin('Cake/TwigView');
 
         $this->addPlugin('IdeHelper');
 
-        $this->addPlugin('Cake/TwigView');
+//        $this->addPlugin('Cake/TwigView');
 
-        $this->addPlugin('AssetMix');
+//        $this->addPlugin('AssetMix');
 
         // Call parent to load bootstrap from files.
         parent::bootstrap();
@@ -71,7 +70,7 @@ class Application extends BaseApplication
 
         if (Configure::read('debug')) {
             Configure::write('DebugKit.forceEnable', true);
-            Configure::write('DebugKit.safeTld', [ 'asak24.loc']);
+
             $this->addPlugin('DebugKit');
         }
 
