@@ -1,0 +1,246 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2021-06-14 09:15+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/Admin/CategoriesController.php:59
+#: Controller/Admin/CategoriesController.php:84
+msgid "The category has been saved."
+msgstr "دسته‌بندی جدید ذخیره شد"
+
+#: Controller/Admin/CategoriesController.php:63
+#: Controller/Admin/CategoriesController.php:88
+msgid "The category could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/CategoriesController.php:106
+msgid "The category has been deleted."
+msgstr ""
+
+#: Controller/Admin/CategoriesController.php:108
+msgid "The category could not be deleted. Please, try again."
+msgstr ""
+
+#: Admin/Categories/add.php:10
+#: Admin/Categories/edit.php:10
+#: Admin/Categories/index.php:39
+#: Admin/Categories/view.php:10
+#: Admin/Categories/view.php:109
+#: Admin/Categories/view.php:153
+msgid "Actions"
+msgstr "عملیات‌ها"
+
+#: Admin/Categories/add.php:11
+#: Admin/Categories/edit.php:16
+#: Admin/Categories/view.php:13
+msgid "List Categories"
+msgstr "فهرست دسته‌بندی‌ها"
+
+#: Admin/Categories/add.php:42
+#: Admin/Categories/index.php:17
+#: Admin/Categories/view.php:14
+msgid "New Category"
+msgstr "دسته‌بندی جدید"
+
+#: Admin/Categories/add.php:47
+msgid "Add Category"
+msgstr "ایجاد دسته‌بندی"
+
+#: Admin/Categories/add.php:65
+#: Admin/Categories/edit.php:37
+msgid "Submit"
+msgstr ""
+
+#: Admin/Categories/edit.php:12
+#: Admin/Categories/index.php:58
+#: Admin/Categories/view.php:131
+#: Admin/Categories/view.php:168
+msgid "Delete"
+msgstr "حذف"
+
+#: Admin/Categories/edit.php:14
+#: Admin/Categories/index.php:58
+#: Admin/Categories/view.php:12
+#: Admin/Categories/view.php:131
+#: Admin/Categories/view.php:168
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Admin/Categories/edit.php:23
+#: Admin/Categories/view.php:11
+msgid "Edit Category"
+msgstr "ویرایش دسته‌بندی"
+
+#: Admin/Categories/index.php:24
+msgid "Categories"
+msgstr "دسته‌بندی‌ها"
+
+#: Admin/Categories/index.php:56
+#: Admin/Categories/view.php:129
+#: Admin/Categories/view.php:166
+#: View/Helper/PaginatorHelper.php:1268
+msgid "View"
+msgstr "مشاهده"
+
+#: Admin/Categories/index.php:57
+#: Admin/Categories/view.php:130
+#: Admin/Categories/view.php:167
+msgid "Edit"
+msgstr "ویرایش"
+
+#: Admin/Categories/index.php:71
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr ""
+
+#: Admin/Categories/index.php:75
+msgid "last"
+msgstr "آخرین"
+
+#: Admin/Categories/index.php:76
+msgid "previous"
+msgstr "قبلی"
+
+#: Admin/Categories/index.php:77
+msgid "next"
+msgstr "بعدی"
+
+#: Admin/Categories/index.php:79
+msgid "first"
+msgstr "اولین"
+
+#: Admin/Categories/view.php:12
+msgid "Delete Category"
+msgstr ""
+
+#: Admin/Categories/view.php:22
+#: Admin/Categories/view.php:95
+msgid "Type"
+msgstr "نوع"
+
+#: Admin/Categories/view.php:26
+#: Admin/Categories/view.php:96
+msgid "Title"
+msgstr "عنوان"
+
+#: Admin/Categories/view.php:30
+#: Admin/Categories/view.php:98
+msgid "Slug"
+msgstr "سئو"
+
+#: Admin/Categories/view.php:34
+msgid "Parent Category"
+msgstr "ریزشاخه"
+
+#: Admin/Categories/view.php:38
+#: Admin/Categories/view.php:94
+#: Admin/Categories/view.php:145
+msgid "Id"
+msgstr "شناسه"
+
+#: Admin/Categories/view.php:42
+#: Admin/Categories/view.php:102
+msgid "Level"
+msgstr "سطح"
+
+#: Admin/Categories/view.php:46
+#: Admin/Categories/view.php:103
+msgid "Lft"
+msgstr ""
+
+#: Admin/Categories/view.php:50
+#: Admin/Categories/view.php:105
+msgid "Rght"
+msgstr ""
+
+#: Admin/Categories/view.php:54
+#: Admin/Categories/view.php:106
+msgid "Product Counts"
+msgstr "تعداد محصولات"
+
+#: Admin/Categories/view.php:58
+#: Admin/Categories/view.php:107
+msgid "Created"
+msgstr "ایجاد شده"
+
+#: Admin/Categories/view.php:62
+#: Admin/Categories/view.php:108
+msgid "Modified"
+msgstr "بازنگری شده"
+
+#: Admin/Categories/view.php:66
+#: Admin/Categories/view.php:100
+#: Admin/Categories/view.php:150
+msgid "Published"
+msgstr "وضعیت انتشار"
+
+#: Admin/Categories/view.php:67
+msgid "Yes"
+msgstr "بله"
+
+#: Admin/Categories/view.php:67
+msgid "No"
+msgstr "خیر"
+
+#: Admin/Categories/view.php:71
+#: Admin/Categories/view.php:97
+#: Admin/Categories/view.php:149
+msgid "Description"
+msgstr "توضیحات"
+
+#: Admin/Categories/view.php:77
+#: Admin/Categories/view.php:99
+msgid "Picture"
+msgstr "تصویر"
+
+#: Admin/Categories/view.php:83
+#: Admin/Categories/view.php:101
+msgid "Visible Flags"
+msgstr "وضعیت نمایش"
+
+#: Admin/Categories/view.php:89
+msgid "Related Categories"
+msgstr ""
+
+#: Admin/Categories/view.php:104
+msgid "Parent Id"
+msgstr "زیر مجموعه"
+
+#: Admin/Categories/view.php:140
+msgid "Related Products"
+msgstr ""
+
+#: Admin/Categories/view.php:146
+msgid "Category Id"
+msgstr ""
+
+#: Admin/Categories/view.php:147
+msgid "Barnd Id"
+msgstr ""
+
+#: Admin/Categories/view.php:148
+msgid "Name"
+msgstr "نام"
+
+#: Admin/Categories/view.php:151
+msgid "Label Fa"
+msgstr "عنوان فارسی"
+
+#: Admin/Categories/view.php:152
+msgid "Label En"
+msgstr ""
+
+#: layout/error.php:38
+msgid "Back"
+msgstr "برگشت"
+
