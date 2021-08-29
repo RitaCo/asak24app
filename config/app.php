@@ -17,7 +17,7 @@ return [
      * Development Mode:
      * true: Errors and warnings shown.
      */
-    'debug' => filter_var(env('DEBUG', false), FILTER_VALIDATE_BOOLEAN),
+    'debug' => filter_var(env('DEBUG', true), FILTER_VALIDATE_BOOLEAN),
 
     /*
      * Configure basic information about the application.
@@ -76,7 +76,7 @@ return [
      *   You should treat it as extremely sensitive data.
      */
     'Security' => [
-        'salt' => env('SECURITY_SALT'),
+        'salt' => env('SECURITY_SALT', '0a8a8ce21566002264c943895e93759d6cde71ba9694cc893c1093ad3214ba95'),
     ],
 
     /*
@@ -88,8 +88,8 @@ return [
      * enable timestamping regardless of debug value.
      */
     'Asset' => [
-        //'timestamp' => true,
-        // 'cacheTime' => '+1 year'
+        'timestamp' => true,
+         'cacheTime' => '+1 year'
     ],
 
     /*
@@ -295,6 +295,9 @@ return [
             'persistent' => false,
             'timezone' => 'UTC',
 
+            'username' => 'amnhir_app',
+            'password' => '3zdI^Y$AdSnu',
+            'database' => 'amnhir_app',
             /*
              * For MariaDB/MySQL the internal default changed from utf8 to utf8mb4, aka full utf-8 support, in CakePHP 3.6
              */
