@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fa">
 <head>
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,12 +13,10 @@
    // $this->AssetMix->script('app')
     ?>
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-
-    <link href="https://unpkg.com/tailwindcss@next/dist/tailwind.min.css" rel="stylesheet">
+    <?= $this->Html->css(['tailwind.min.css', 'full.css', 'app', 'fontiran']) ?>
     <?= $this->fetch('meta') ?>
-
     <?= $this->fetch('css') ?>
+
     <?= $this->fetch('script') ?>
 </head>
 <body class="flex items-center justify-center w-screen h-screen p-10 space-x-6 bg-gray-300">
